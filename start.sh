@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Create the .env file
+cp -n .env.example .env
+
 # Start the containers
 docker-compose up -d
 

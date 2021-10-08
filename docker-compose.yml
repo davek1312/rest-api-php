@@ -1,5 +1,3 @@
-version: '3.5'
-
 services:
 
   rest-api-php:
@@ -10,6 +8,8 @@ services:
     build: .
     command: php -S rest-api-php:80 -t public
     restart: always
+    depends_on:
+      - mysql
 
   mysql:
     image: mysql:8.0
