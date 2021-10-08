@@ -1,4 +1,5 @@
 /vendor
 /.idea
+/mysql
 .env
 .phpunit.result.cache
